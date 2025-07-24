@@ -1,13 +1,14 @@
 import {StyleSheet} from 'react-native';
+import {Metrics} from "../../common/styles";
 
 export default StyleSheet.create({
     checkBoxView: {
-        height: 20,
-        width: 20,
+        height: Metrics.ModerateScale(20),
+        width: Metrics.ModerateScale(20),
         borderWidth: 1,
         borderColor: 'black',
-        borderRadius: 5,
-        marginRight: 10,
+        borderRadius: Metrics.ModerateScale(5),
+        marginRight: Metrics.ScaleValue(10),
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -15,19 +16,18 @@ export default StyleSheet.create({
         borderColor: '#888',
     },
     todoItem: {
-        // display: 'flex',
-        flexDirection: "row",
+        flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 8,
-        padding: 8,
+        marginBottom: Metrics.VerticalScaleValue(8),
+        padding: Metrics.ModerateScale(8),
         borderWidth: 1,
         borderColor: '#ddd',
-        borderRadius: 4,
+        borderRadius: Metrics.ModerateScale(4),
     },
     todoItemText: {
         flex: 1,
-        marginRight: 8,
+        marginRight: Metrics.ScaleValue(8),
         color: '#333',
     },
     completed: {
@@ -37,7 +37,7 @@ export default StyleSheet.create({
     deleteButton: {
         backgroundColor: '#ff6347',
         color: '#fff',
-        padding: 4,
-        borderRadius: 4,
+        padding: Metrics.ModerateScale(4),
+        borderRadius: Metrics.ModerateScale(4),
     },
 });
